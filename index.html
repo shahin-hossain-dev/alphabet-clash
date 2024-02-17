@@ -76,26 +76,25 @@
                     <kbd class="kbd">b</kbd>
                     <kbd class="kbd">n</kbd>
                     <kbd class="kbd">m</kbd>
-                    <kbd class="kbd">/</kbd>
                 </div>
             </div>
             <div class="flex w-full justify-between">
                 <button class="btn bg-[#894189] text-white border-0 text-lg">Life <img src="./images/heart.svg" alt="">
-                    <span>5</span></button>
+                    <span id="life">5</span></button>
                 <button class="btn bg-[#360490] text-white border-0 text-lg">Score <img src="./images/doller.svg"
                         alt="">
-                    <span>0</span>
+                    <span id="score">0</span>
                 </button>
-
             </div>
         </div>
         <!-- playing field end -->
         <!-- final score start -->
-        <div class="hidden">
+        <div id="final-score-field" class="hidden">
             <div
                 class="p-10 bg-gradient-to-r from-[#FFFFFF8F] to-[#5400EEB3] rounded-lg flex flex-col items-center gap-5">
-                <h1 class="text-5xl font-bold text-white">Score: <span class="font-medium">0</span></h1>
-                <button class="btn">Play Again</button>
+                <h1 class="text-5xl font-bold text-white">Score: <span id="final-score" class="font-medium">0</span>
+                </h1>
+                <button onclick="play()" class="btn">Play Again</button>
                 <p class="text-white">Practice will make you Pro</p>
             </div>
         </div>
